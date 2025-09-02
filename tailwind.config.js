@@ -38,6 +38,7 @@ module.exports = {
         buttonTitle:['20px', { fontWeight: '700', lineHeight: '32px' }],
         subTitle: ['16px', { fontWeight: '700', lineHeight: '24px' }],
         placehold:['16px', { fontWeight: '600', lineHeight: '24px' }],
+        description : ['16px', { fontWeight: '500', lineHeight: '24px' }],
         bodyBold: ['14px', { fontWeight: '700', lineHeight: '20px' }],
         body: ['14px', { fontWeight: '500', lineHeight: '20px' }],
         caption: ['10px', { fontWeight: '500', lineHeight: '14px' }],
