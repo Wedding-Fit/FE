@@ -8,7 +8,7 @@ const Navigator = () => {
   const isHome = location.pathname === '/'
   const isAnalysis = location.pathname === '/ai-estimation'
   const isSimulation = [
-    '/couple',
+    '/couple/dashboard',
     '/couple/register',
     '/couple/goal-detail',
     '/couple/goal-simulation-input',
@@ -36,7 +36,7 @@ const Navigator = () => {
 
       <div
         className="flex flex-col items-center cursor-pointer"
-        onClick={() => navigate('/couple')}
+        onClick={() => navigate('/couple/dashboard')}
       >
         <NotepadText className={`w-5 h-5 mb-2.5 ${isSimulation ? 'text-red-light' : 'text-gray-700'}`} />
         <p className={`text-caption ${isSimulation ? 'text-red-light' : 'text-gray-700'}`}>자산시뮬</p>
