@@ -1,0 +1,15 @@
+{
+    "material-icon-theme.folders.associations": {
+        "_entities": "class",       // 📘 클래스나 모델 느낌
+        "_features": "controller",   // ⚙️ 기능 / 유즈케이스 느낌
+        "account-register": "Scala",
+        "ai-estimation": "Upload",
+        "community": "Resolver",
+        "couple": "Update",
+        "home": "Context",
+        "product-recommendation": "Project",
+        "spending-analysis": "Pdm",
+        "user": "Moon",
+        "wedding-guide": "Batch",
+    }
+}
