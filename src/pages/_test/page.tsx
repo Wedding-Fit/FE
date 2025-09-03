@@ -116,7 +116,7 @@ const TestPage = () => {
         placeholder="example@email.com"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        error={emailError}
+       
       />
       <MiniButton onClick={validateEmail}>중복 확인</MiniButton>
 
