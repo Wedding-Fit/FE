@@ -58,8 +58,8 @@ const SignupPage = () => {
     }
     console.log(data)
     try {
-      await signUp(data)
-      setModalOpen(true)
+      const res = await signUp(data)
+      if(res.code === 201)setModalOpen(true)
     } catch (err: any) {
       setSubmitError("회원가입에 실패했습니다.")
     }
