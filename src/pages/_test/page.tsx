@@ -12,16 +12,11 @@ import { RadioGroup } from "../../shared/components/RadioGroup"
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import SemiButton from "../../shared/components/SemiButton"
+import { regions } from "../../shared/constants/constants"
 
 const statusOptions = [
   { value: "progress", label: "진행 중" },
   { value: "done", label: "완료" },
-]
-
-const regions = [
-  "서울특별시", "경기도", "인천광역시", "강원도", "충청도", "전라도",
-  "경상도", "세종특별시", "광주광역시", "대구광역시", "부산광역시",
-  "대전광역시", "울산광역시", "제주도"
 ]
 
 const TestPage = () => {
