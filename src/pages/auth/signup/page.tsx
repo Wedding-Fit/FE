@@ -58,8 +58,8 @@ const SignupPage = () => {
     }
     console.log(data)
     try {
-      await signUp(data)
-      setModalOpen(true)
+      const res = await signUp(data)
+      if(res.code === 201)setModalOpen(true)
     } catch (err: any) {
       setSubmitError("회원가입에 실패했습니다.")
     }
@@ -127,13 +127,14 @@ const SignupPage = () => {
         value={gender}
         onChange={(value) => setGender(value as "MALE" | "FEMALE")}
       />
-
-      <p className="text-subTitle">생년월일</p>
-      <DatePicker
-        value={birth}
-        onChange={setBirth}
-        placeholder="YYYY-MM-DD"
-      />
+      <div>
+        <p className="text-subTitle mb-2.5">생년월일</p>
+        <DatePicker
+          value={birth}
+          onChange={setBirth}
+          placeholder="YYYY-MM-DD"
+        />
+      </div>
 
       {submitError && <p className="text-red-500">{submitError}</p>}
 

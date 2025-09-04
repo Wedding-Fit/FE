@@ -8,6 +8,7 @@ interface AuthState {
   coupleId: number | null
 
   setAuth: (data: SignInResponse) => void
+  setCoupleId: (coupleId: number) => void
   clearAuth: () => void
 }
 
@@ -24,7 +25,12 @@ export const useAuthStore = create<AuthState>((set) => ({
       nickname: data.nickname,
       coupleId: data.coupleId ?? null,
     }),
-
+  
+    setCoupleId: (coupleId: number) =>
+    set({
+      coupleId : coupleId,
+  }),
+  
   clearAuth: () =>
     set({
       accessToken: null,
