@@ -1,9 +1,11 @@
+import ProductDetail from '../_features/ui/ProductDetail';
+
 const ProductRecommendationDetailPage = () => {
   return (
-    <main>
-      <p>상품 추천 상세보기</p>
+    <main className="w-full h-full">
+      <ProductDetail />
     </main>
-  )
-}
+  );
+};
 
-export default ProductRecommendationDetailPage
+export default ProductRecommendationDetailPage;
