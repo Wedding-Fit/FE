@@ -1,9 +1,10 @@
+import ProductFilter from '../_features/ui/ProductFilter';
+
 const ProductRecommendationDashboardPage = () => {
   return (
-    <main>
-      <p>상품 추천 대시보드</p>
+    <main className="w-full h-full">
+      <ProductFilter />
     </main>
-  )
-}
-
-export default ProductRecommendationDashboardPage
+  );
+};
+export default ProductRecommendationDashboardPage;
